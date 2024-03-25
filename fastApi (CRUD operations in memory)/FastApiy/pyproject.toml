@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "fastapiy"
+version = "0.1.0"
+description = ""
+authors = ["talhak911 <talhakhan8300@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+[tool.poetry.scripts]
+dev = "python main.py"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
