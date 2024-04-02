@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fastapi-validations"
+version = "0.1.0"
+description = ""
+authors = ["talhak911 <talhakhan8300@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.1"
+uvicorn = "^0.29.0"
+
+[tool.poetry.scripts]
+dev = "fastapi_validations.main:start"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
