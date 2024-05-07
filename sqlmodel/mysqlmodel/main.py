@@ -27,7 +27,7 @@ def update_todo(todo_id:int,todo:UpdateTodo):
     with Session(engine) as session:
         db_todo=session.get(Todo,todo_id)
         if not db_todo:
-            raise HTTPException(status_code=404,detail="Todo not found")
+            raise HTTPException(status_code=404,detail="Todo was not found")
         todo_data=todo.model_dump(exclude_unset=True)
         db_todo.sqlmodel_update(todo_data)
         session.add(db_todo)
